@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/shoptestdb
+    username: root
+    password: password
+    schema:
+    - classpath*:import.sql
+    
+    
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    
+  
+    
